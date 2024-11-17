@@ -1,0 +1,44 @@
+.BizesItem {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  padding: 15px 0px;
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.BizesItem .img_section {
+  position: relative;
+  min-width: 80px;
+  width: 130px;
+  height: 130px;
+
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.BizesItem .img_section > img {
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(50, 50);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.BizesItem .info_section {
+  flex: 1;
+  margin: 10px;
+}
+.BizesItem .item_section {
+  margin: 10px;
+  padding-top: 20px;
+}
+
+.BizesItem .item_section * {
+  margin-right: 10px;
+}

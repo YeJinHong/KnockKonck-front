@@ -1,0 +1,25 @@
+.option_bar * {
+  margin-top: 10px;
+}
+
+.option_bar input {
+  background-color: rgb(236, 236, 236);
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  padding: 5px 8px;
+}
+
+.option_bar .init_section {
+  display: flex;
+  justify-content: right;
+}
+
+.option_bar .search_section {
+  display: flex;
+  gap: 5px;
+}
+
+.option_bar .filter_section > * {
+  margin-right: 10px;
+}

@@ -1,0 +1,20 @@
+li {
+  width: 40px;
+}
+li > span {
+  width: 100%;
+}
+
+li > button {
+  height: 36px;
+  width: 100%;
+  border-color: white;
+}
+
+.btn_ABLE {
+  background-color: #bbe0eb;
+}
+
+.time_text {
+  min-height: 20px;
+}

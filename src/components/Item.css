@@ -1,0 +1,63 @@
+.Item {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  padding: 15px 0px;
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.Item .img_section {
+  position: relative;
+  min-width: 80px;
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.Item .img_section > img {
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(50, 50);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.Item .info_section {
+  flex: 1;
+  min-width: 70%;
+  margin: 10px;
+}
+
+.Item .info_section > * {
+  padding-bottom: 10px;
+}
+
+.Item .info_section .item_name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Item .info_section .price {
+  font-size: 18px;
+}
+
+.Item .button_section {
+  min-width: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Item .booking_section {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+}
