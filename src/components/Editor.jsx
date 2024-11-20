@@ -3,7 +3,7 @@ import Button from "./Button";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import BizesItem from "./BizesItem";
-import { crawlingBizesData } from "../services/api";
+import { getBizesData, crawlingBizesData } from "../services/api";
 
 const Editor = () => {
   const [newBizes, setNewBizes] = useState();
@@ -25,9 +25,15 @@ const Editor = () => {
 
   const onClickSubmitButton = () => {
     const getData = async () => {
-      const result = await crawlingBizesData(input.mapUrl);
-      console.log(result);
-      setNewBizes(result);
+      const dbResult = await getBizesData(input.mapUrl);
+      if (dbResult === "") {
+        console.log("사업체 정보 없음", dbResult);
+        const result = await crawlingBizesData(input.mapUrl);
+        console.log(result);
+        setNewBizes(result);
+        return;
+      }
+      setNewBizes(dbResult);
     };
     getData();
   };

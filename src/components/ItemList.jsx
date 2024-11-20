@@ -62,11 +62,11 @@ const ItemList = () => {
 
       for (let i = 0; i < result.length; i++) {
         // 접속 시점마다 데이터 크롤링
-        await crawlingTimeData(
-          result[i].bizesNumber,
-          result[i].itemNumber,
-          getStringedDate(filterInput.startDate)
-        );
+        // await crawlingTimeData(
+        //   result[i].bizesNumber,
+        //   result[i].itemNumber,
+        //   getStringedDate(filterInput.startDate)
+        // );
         const bookingData = await getBookingList(
           result[i].bizesNumber,
           result[i].itemNumber,

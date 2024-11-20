@@ -43,6 +43,16 @@ export const crawlingTimeData = async (bizesNumber, itemNumber, startDate) => {
   }
 };
 
+export const getBizesData = async (mapUrl) => {
+  try {
+    const response = await axios.get(`${API_BASE_URL}/bizes?mapUrl=${mapUrl}`);
+    return response.data;
+  } catch (error) {
+    console.log("Error load bizes data", error);
+    throw error;
+  }
+};
+
 export const crawlingBizesData = async (mapUrl) => {
   try {
     const response = await axios.post(`${API_BASE_URL}/bizes`, {
