@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /
-Allow: /$
-Allow: /p/$
-Allow: /v5/$
-Sitemap: https://map.naver.com/sitemap.xml
